@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset = "utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Approved claim</title>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+            <link rel = "stylesheet" href = "../css/style.css">
+    </head>
+    <body class = "main-body">
+        <header>
+            <nav class = "navbar bg-dark dark-blue">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item" ><img class = "logo"  src = "../image/custom.jpg"></li>
+                </ul>
+                <!-- <a class = "right" href = "#"><span class = "far fa-user"></span></a> -->
+                <div class = "d-flex justify-content-end b-3">
+                    <div class = "p-2"><a href = "#"><span class = "far fa-user"></span></a></div>
+                    <div class = "p-2"><a href = "#"><span class = "far fa-bell"></span></a></div>
+                </div>
+            </nav>
+        </header>
+        <button class = "btn btn-custom-blue btn-menu">MENU</button>
+        <div class = "d-flex flex-container">
+            <div class = "flex-grow-0 bg-custom-green align-self-stretch side-pane" >
+                        <a class = "side-link cross" href = "#">X</a>
+                        <a class = "side-link" href = "#">Home</a>
+                        <a class = "side-link" href = "issueclaim.html">Issue Claims</a>
+                        <a class = "side-link" href = "pendingclaim.html">Pending Claims</a>
+                        <a class = "side-link active" href = "#">Approved Claims</a>
+                        <a class = "side-link" href = "approveclaim.html">Incomming Claims</a>            
+            </div>
+
+            <div class = "p-3 flex-grow-1">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-md-1">
+                        </div>
+                        <div class = "col-md-10">
+                            <table class = "table table-dark table-hover bg-custom-blue">
+                                <thead>
+                                    <tr><th>Claim Id</th><th>Claim Title</th><th>Date</th><th>Reporting Manager</th><th>Status</th><th>Details</th></tr>
+                                </thead>
+                                <tbody>
+                                        <tr><td>C003</td><td>Food expense claim</td><td>10-03-2020</td><td>Pushpa Gupta</td><td>Approved</td><td><a class = "btn btn-sm btn-custom-green" href = "#">Details</a></td></tr>
+                                        <tr><td>C004</td><td>Travel expense claim</td><td>09-03-2020</td><td>Bishal Bhowmick</td><td>Approved</td><td><a class = "btn btn-sm btn-custom-green" href = "#">Details</a></td></tr>
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                        <div class = "col-md-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer class = "footer dark-blue">
+            <div class = container>
+            </div>
+        </footer>
+</body>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<!--Custom javascript file-->
+<script src = "../script/script.js"></script>
+</html>

@@ -1,0 +1,189 @@
+/**
+ * CUSTOM CSS CODES,
+ * @author kushaldeep kansabanik,
+ * @version 0.0.1
+ */
+html{
+    position: relative;
+    min-height:100%;
+}
+.dark-blue{
+    background-color: #063671 !important;
+}
+.bg-custom-green{
+    background-color: #45a744 !important;
+}
+.bg-custom-blue{
+    background-color: #063671 !important;
+}
+.logo{
+    display: block;
+    max-width: 100px;
+    max-height: 35px;
+    box-shadow: 6px 3px 10px #000000;
+}
+.right{
+    float: right;
+    display: block !important;
+}
+
+.main-body{
+
+    height: 100%;
+    margin-bottom: 65px;
+}
+.footer{
+   
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+}
+
+.form-header{
+    text-align: center;
+}
+.forms{
+    margin: 50px 0px 50px 0px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 1px 2px 10px #063671;
+}
+.link{
+    display: block;
+    margin: 2px 0px 2px 0px; 
+}
+.btn-custom-blue{
+
+    background-color: #063671 !important;
+    color: ghostwhite;
+}
+.btn:hover{
+    color: ghostwhite !important;
+}
+.btn-custom-green{
+
+    background-color: #45a744 !important;
+    color: ghostwhite;
+}
+.reg-error-message{
+    color: red;
+}
+/************************************************CODE OF HOME PAGE BY KUSHAL BANIK********************************************************/
+
+/**************************************************Employee issue claim,approve claim,pending claim,approved claim code ****************************************************************/
+.flex-grow-0{
+    flex-grow: 0 !important;
+
+}
+.flex-grow-1{
+    flex-grow: 1 !important;
+
+}
+.flex-grow-2{
+    flex-grow: 2 !important;
+
+}
+.flex-grow-3{
+    flex-grow: 3 !important;
+
+}
+.flex-grow-4{
+    flex-grow: 4 !important;
+
+}
+.flex-grow-5{
+    flex-grow: 5 !important;
+
+}
+.flex-grow-6{
+    flex-grow: 6 !important;
+
+}
+.flex-grow-7{
+    flex-grow: 7 !important;
+
+}
+.flex-grow-8{
+    flex-grow: 8 !important;
+
+}
+.flex-container{
+    
+    min-height: calc(100vh - 121px);
+}
+
+.side-link{
+    text-decoration: none;
+    color: ghostwhite;
+    display: block;
+    padding: 10px 30px 10px 30px;
+}
+.side-link:hover{
+    color: white;
+    text-decoration: none;
+}
+.active{
+    
+    background-color:#217320;
+}
+.btn-menu{
+    float:left;
+    position: absolute;
+    display:none;
+    top:150px;
+}
+.cross{
+    text-align: right;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+/* #empIdList{
+    display: none;
+} */
+#empIdList li{
+    display:none;
+}
+#empIdList{
+
+    list-style-type: none;
+}
+.tag-area{
+    max-width: inherit;
+    height: 200px;
+    overflow-y: scroll;
+}
+.tag{
+    display:inline-block;
+    background: #dbdbe4;
+    min-height:25px;
+    margin-left: 5px;
+}
+.tag-cross{
+    display: inline-block;
+    vertical-align: top;
+}
+.tag-cross:hover{
+    text-decoration: none;
+}
+.tag-emp-name , .tag-emp-id{
+    display: inline;
+}
+.item-emp-name , .item-emp-id{
+    display:inline;
+}
+.warning-message{
+    color:red;
+}
+@media screen and (max-width: 886px){
+   .flex-container{
+       flex-direction: column;
+   }
+   .side-items{
+       text-align: center;
+   }
+}
+/**************************************************Employee issue claim,approve claim,pending claim,approved claim code **************************************************************/

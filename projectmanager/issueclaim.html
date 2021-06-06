@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset = "utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>issueclaim</title>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+            <link rel = "stylesheet" href = "../css/style.css">
+    </head>
+    <body class = "main-body">
+        <header>
+            <nav class = "navbar bg-dark dark-blue">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item" ><img class = "logo"  src = "../image/custom.jpg"></li>
+                </ul>
+                <!-- <a class = "right" href = "#"><span class = "far fa-user"></span></a> -->
+                <div class = "d-flex justify-content-end b-3">
+                    <div class = "p-2"><a href = "#"><span class = "far fa-user"></span></a></div>
+                    <div class = "p-2"><a href = "#"><span class = "far fa-bell"></span></a></div>
+                </div>
+            </nav>
+        </header>
+        <button class = "btn btn-custom-blue btn-menu">MENU</button>
+        <div class = "d-flex flex-container">
+            <div class = "flex-grow-0 bg-custom-green align-self-stretch side-pane" >
+                        <a class = "side-link cross" href = "#">X</a>
+                        <a class = "side-link" href = "#">Home</a>
+                        <a class = "side-link active" href = "#">Issue Claims</a>
+                        <a class = "side-link" href = "pendingclaim.html">Pending Claims</a>
+                        <a class = "side-link" href = "approvedclaim.html">Approved Claims</a>
+                        <a class = "side-link" href = "approveclaim.html">Incomming Claims</a>
+            </div>
+
+            <div class = "p-3 flex-grow-1">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-md-1">
+                        </div>
+                        <div class = "col-md-10">
+                            
+                                <form id = "claim_form" class = "forms border">
+                                        <h3 class = "form-header">Claim Form</h3>
+                                        <div class = "form-group">
+                                            <label for = "claim_emp_id">Employee Id</label>
+                                            <input id = "claim_emp_id" class = "form-control" type = "text" placeholder = "Employee Id...">
+                                        </div>
+                                        <div class = "form-group">
+                                            <label for = "claim_emp_name">Employee Name</label>
+                                            <input id = "claim_emp_name" class = "form-control" type = "text" placeholder = "Employee name...">
+                                        </div>
+                                        <div class = "form-group">
+                                                <label for = "claim_manager_id">Manager Id</label>
+                                                <input id = "claim_manager_id" class = "form-control" type = "text" placeholder = "Manager Id...">
+                                        </div>
+                                        <div class = "form-group">
+                                                <label for="claim_type">Claim Type</label>
+                                                <select id = "claim_type" class = "form-control" placeholder = "Select Claim Type">
+                                                    <option value = "0">Select Claim Type</option>
+                                                    <option value = "1">Travel Expense Claim</option>
+                                                    <option value = "2">Food Expense Claim</option>
+                                                    <option value = "3">Others</option>
+                                                </select>
+                                        </div>
+                                        <div class = "form-group">
+                                                <label for="claim_description">Claim Description</label>
+                                                <textarea id = "claim_description" class = "form-control" placeholder = "Claim Description..." >
+
+                                                </textarea>
+                                        </div>
+                                        <div class = "form-group">
+                                                <label for="claim_extra_person">No of Extra Persons</label>
+                                                <input id = "claim_extra_person" class = "form-control" type = "text" placeholder = "No of person..."> 
+                                        </div>
+                                        <div class = "form-group">
+                                            <label for="claim_emp_id_search">Extra Person search</label>
+                                            <input class="form-control" id="claim_emp_id_search" type="text" placeholder="Search..">
+                                                <ul class="list-group" id="empIdList">
+                                                    <li class="list-group-item">First item</li>
+                                                    <li class="list-group-item">Second item</li>
+                                                    <li class="list-group-item">Third item</li>
+                                                    <li class="list-group-item">Fourth</li>
+                                                </ul> 
+                                        </div>
+                                        <div class = "form-group">
+                                            <div class = "tag-area border">
+                                                <span class = "tag">kushal-TRN134<a class = "tag-cross" href = "#">x</a></span>
+                                            </div>
+                                        </div>
+                                        <div class = "form-group">
+                                            <label for="claim_amount">Amount</label>
+                                            <input id = "claim_amount" class = "form-control" type = "text" placeholder = "Amount..."> 
+                                        </div>
+                                        <div class = "form-group">
+                                            <label for="claim_detail_proof">Detail proof</label>
+                                            <input id = "claim_detail_proof" class = "form-control" type = "file" placeholder = "File..."> 
+                                        </div>
+                                        <div class = "form-group">
+                                                <button type="submit" class="btn btn-custom-green">Submit</button>
+                                                <button type="submit" class="btn btn-custom-blue">Reset</button>
+                                        </div>
+                                </form>
+
+                        </div>
+                        <div class = "col-md-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class = "footer dark-blue">
+            <div class = container>
+            </div>
+        </footer>
+</body>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<!--Custom javascript file-->
+<script src = "../script/script.js"></script>
+</html>

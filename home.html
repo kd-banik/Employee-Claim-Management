@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset = "utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Home</title>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+            <link rel = "stylesheet" href = "css/style.css">
+    </head>
+    <body class = "main-body">
+        <header>
+            <nav class = "navbar bg-dark dark-blue">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item" ><img class = "logo"  src = "image/custom.jpg"></li>
+                </ul>
+                <!-- <a class = "right" href = "#"><span class = "far fa-user"></span></a> -->
+                <div class = "d-flex justify-content-end b-3">
+                    <div class = "p-2"><a href = "#"><span class = "far fa-user"></span></a></div>
+                    <div class = "p-2"><a href = "#"><span class = "far fa-bell"></span></a></div>
+                </div>
+            </nav>
+        </header>
+
+        <!--Design the form-->
+                <div class = "container-fluid">
+                    <div class = row>
+                        <div class = col-lg-2>
+                        </div>
+                        <div class = col-lg-8>
+                            <!-- Login Form-->
+                                <form id = "login_form" class = "forms border" >
+                                    <h3 class = "form-header">Login Form</h3>
+                                    <div class = "form-group">
+                                        <label for="login_email">Email Id</label>
+                                        <input id = "login_email" class = "form-control" type = "email" placeholder = "Enter email id...">
+                                    </div>
+                                    <div class = "form-group">
+                                            <label for="login_password">Password</label>
+                                            <input id = "login_password" class = "form-control" type = "password" placeholder = "Enter Password...">
+                                    </div>
+                                    <a id = "signup" class = "link" href = "#">New User Sign up</a>
+                                    <div class = "form-group">
+                                            <button id="login-submit" type="submit" class="btn btn-custom-green">Submit</button>
+                                            <button id="login-reset" type="submit" class="btn btn-custom-blue">Reset</button>
+                                    </div>
+                                </form>
+
+                                <!-- Registration Form-->
+
+                                <form id = "reg_form" class = "forms border" style = "display: none">
+                                        <h3 class = "form-header">Registration Form</h3>
+                                        <div class = "form-group">
+                                            <label>Employee Id</label>
+                                            <input id = "reg_emp_id" class = "form-control" type = "text" placeholder = "Employee Id...">
+                                            <label class = "reg-error-message" id = "reg_emp_id_message"></label>
+                                        </div>
+                                        <div class = "form-group">
+                                            <label>First Name</label>
+                                            <input id = "reg_fname" class = "form-control" type = "text" placeholder = "First name...">
+                                            <label class = "reg-error-message" id = "reg_fname_message"></label>
+                                        </div>
+                                        <div class = "form-group">
+                                                <label>Last Name</label>
+                                                <input id = "reg_lname" class = "form-control" type = "text" placeholder = "Last name...">
+                                                <label class = "reg-error-message" id = "reg_lname_message"></label>
+                                            </div>
+                                        <div class = "form-group">
+                                            <label for="reg_email">Email Id</label>
+                                            <input id = "reg_email" class = "form-control" type = "email" placeholder = "Enter email id...">
+                                            <label class = "reg-error-message" id = "reg_email_message"></label>
+                                        </div>
+                                        <div class = "form-group">
+                                                <label for="reg_designation">Designation</label>
+                                                <select id = "reg_designation" class = "form-control" placeholder = "Select Designation...">
+                                                    <option value = "0">Select Designation</option>
+                                                    <option value = "1">Employee</option>
+                                                    <option value = "2">Project Manager</option>
+                                                    <option value = "3">Accounts dept</option>
+                                                    <option value = "4">Trainee</option>
+                                                </select>
+                                                <label class = "reg-error-message" id = "reg_designation_message"></label>
+                                            </div>
+                                        <div class = "form-group">
+                                                <label for="reg_password">Password</label>
+                                                <input id = "reg_password" class = "form-control" type = "password" placeholder = "Enter Password...">
+                                                <label class = "reg-error-message" id = "reg_password_message"></label>
+                                        </div>
+                                        <div class = "form-group">
+                                                <label for="reg_confirm_password">Confirm Password</label>
+                                                <input id = "reg_confirm_password" class = "form-control" type = "password" placeholder = "Enter Password...">
+                                                <label class = "reg-error-message" id = "reg_confirm_password_message"></label>
+                                        </div>
+                                        <a id = "signin" class = "link" href = "#">click here to Sign in</a>
+                                        <div class = "form-group">
+                                                <button id = "reg_submit" type="submit" class="btn btn-custom-green">Submit</button>
+                                                <button id = "reg_reset" type="submit" class="btn btn-custom-blue">Reset</button>
+                                        </div>
+                                </form>
+                        </div>
+                        <div class = col-lg-2>
+                        </div>
+                    </div>
+                 </div>
+        
+        <footer class = "footer dark-blue">
+                <div class = container>
+                </div>
+        </footer>
+    </body>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--Custom javascript file-->
+    <script src = "script/script.js"></script>
+    
+</html>
